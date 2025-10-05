@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particles-container" id="particles"></div>
+        <div class="gradient-overlay"></div>
+    </div>
+
     <!-- Header Navigation -->
     <header class="header">
         <nav class="nav container">
             <div class="nav-brand">
                 <span class="nav-brand-text">Titus Kibet</span>
+                <span class="nav-brand-subtitle">Cybersecurity</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -21,13 +28,13 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#certifications" class="nav-link">Certifications</a>
+                    <a href="#lab-challenges" class="nav-link">Labs</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
@@ -41,21 +48,84 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Enhanced Profile Photo -->
     <section class="hero" id="home">
         <div class="hero-content container">
-            <div class="hero-text">
-                <h1 class="hero-title">Titus Kibet</h1>
-                <p class="hero-subtitle">Cybersecurity Engineer | Penetration Tester | Forensic Investigator</p>
-                <p class="hero-description">6+ years of experience in cybersecurity consulting, penetration testing, and digital forensics. Protecting organizations from cyber threats through comprehensive security assessments and incident response.</p>
+            <div class="hero-left">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-main">Titus Kibet</span>
+                    <span class="title-typing" id="typing-text"></span>
+                </h1>
+                <p class="hero-description">
+                    <span class="highlight">6+ years</span> of experience protecting organizations from cyber threats through comprehensive security assessments, penetration testing, and digital forensics investigations.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="6">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">Satisfied Clients</div>
+                    </div>
+                </div>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn--primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn--outline">View Projects</a>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="btn-icon">→</i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Projects</span>
+                        <i class="btn-icon">↓</i>
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-placeholder">
-                    <div class="hero-icon">🛡️</div>
+            <div class="hero-right">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <div class="profile-border"></div>
+                        <div class="profile-picture">
+                            <!-- Enhanced Professional Portrait Placeholder -->
+                            <div class="profile-placeholder">
+                                <div class="profile-avatar">
+                                    <!-- Professional black & white portrait representation -->
+                                    <div class="avatar-base">
+                                        <div class="avatar-head"></div>
+                                        <div class="avatar-suit"></div>
+                                        <div class="avatar-tie"></div>
+                                    </div>
+                                </div>
+                                <div class="profile-title">Cybersecurity Engineer</div>
+                            </div>
+                        </div>
+                        <div class="profile-status">
+                            <div class="status-dot"></div>
+                            <span>Available for Projects</span>
+                        </div>
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card security">
+                            <span>🛡️ Security Expert</span>
+                        </div>
+                        <div class="floating-card forensics">
+                            <span>🔍 Digital Forensics</span>
+                        </div>
+                        <div class="floating-card cloud">
+                            <span>☁️ Cloud Security</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,55 +134,59 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-description">As a dedicated cybersecurity professional with over 6 years of experience, I specialize in protecting organizations from evolving cyber threats. My expertise spans penetration testing, digital forensics, cloud security, and incident response.</p>
-                    <p class="about-description">I hold advanced certifications in Oracle Cloud Infrastructure and AWS, with a strong educational background in Computer Security and Forensics from Jaramogi Oginga Odinga University.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">6+</span>
-                            <span class="stat-label">Years Experience</span>
+                    <p class="about-description">
+                        As a dedicated cybersecurity professional with over <span class="highlight">6 years of experience</span>, I specialize in protecting organizations from evolving cyber threats. My expertise spans penetration testing, digital forensics, cloud security, and incident response.
+                    </p>
+                    <p class="about-description">
+                        I hold advanced certifications in <span class="highlight">Oracle Cloud Infrastructure</span> and <span class="highlight">AWS</span>, with a strong educational background in Computer Security and Forensics from Jaramogi Oginga Odinga University.
+                    </p>
+                    <div class="expertise-areas">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">🎯</div>
+                            <div class="expertise-content">
+                                <h4>Penetration Testing</h4>
+                                <p>Comprehensive security assessments and vulnerability identification</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">12+</span>
-                            <span class="stat-label">Projects Completed</span>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">🔬</div>
+                            <div class="expertise-content">
+                                <h4>Digital Forensics</h4>
+                                <p>Expert investigation and evidence analysis</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">5</span>
-                            <span class="stat-label">Certifications</span>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">☁️</div>
+                            <div class="expertise-content">
+                                <h4>Cloud Security</h4>
+                                <p>Multi-cloud security architecture and DevSecOps</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="skills-overview">
-                    <h3 class="skills-title">Core Competencies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h4>Security Specializations</h4>
-                            <ul class="skill-list">
-                                <li>Computer Forensics</li>
-                                <li>Penetration Testing</li>
-                                <li>Threat Intelligence</li>
-                                <li>Risk Assessment</li>
-                            </ul>
+                <div class="about-visual">
+                    <div class="experience-timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-year">2019</div>
+                            <div class="timeline-content">Started Cybersecurity Journey</div>
                         </div>
-                        <div class="skill-category">
-                            <h4>Technical Skills</h4>
-                            <ul class="skill-list">
-                                <li>Python Programming</li>
-                                <li>Network Security</li>
-                                <li>Cloud Security</li>
-                                <li>ICT Security</li>
-                            </ul>
+                        <div class="timeline-item active">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-content">Freelance Consultant</div>
                         </div>
-                        <div class="skill-category">
-                            <h4>Cloud Platforms</h4>
-                            <ul class="skill-list">
-                                <li>Oracle Cloud Infrastructure</li>
-                                <li>Amazon Web Services</li>
-                                <li>DevOps & IaC</li>
-                                <li>Multi-Cloud Security</li>
-                            </ul>
+                        <div class="timeline-item active">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">Cloud Security Expert</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025</div>
+                            <div class="timeline-content">Leading Security Projects</div>
                         </div>
                     </div>
                 </div>
@@ -120,59 +194,43 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
+    <!-- Skills Section with Enhanced Visualizations -->
+    <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">Cyber Security Consultant</h3>
-                            <span class="timeline-company">Upwork</span>
-                            <span class="timeline-type">Freelance • Remote</span>
+            <div class="section-header">
+                <span class="section-subtitle">My expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category active" data-category="security">
+                        <div class="category-header">
+                            <div class="category-icon">🛡️</div>
+                            <h3>Security Specializations</h3>
                         </div>
-                        <span class="timeline-duration">Jan 2022 - Present (3 yrs 10 mos)</span>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">Information Security Consulting</span>
-                            <span class="skill-tag">ICT Security</span>
-                            <span class="skill-tag">Risk Assessment</span>
-                            <span class="skill-tag">Threat Analysis</span>
-                            <span class="skill-tag">Security Auditing</span>
+                    </div>
+                    <div class="skill-category" data-category="technical">
+                        <div class="category-header">
+                            <div class="category-icon">⚡</div>
+                            <h3>Technical Skills</h3>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-category="cloud">
+                        <div class="category-header">
+                            <div class="category-icon">☁️</div>
+                            <h3>Cloud Security</h3>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-category="tools">
+                        <div class="category-header">
+                            <div class="category-icon">🔧</div>
+                            <h3>Tools & Platforms</h3>
                         </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">Cyber Security Consultant</h3>
-                            <span class="timeline-company">flechettes-sec</span>
-                            <span class="timeline-type">Part-time • Hybrid</span>
-                        </div>
-                        <span class="timeline-duration">Jan 2019 - Jul 2025 (6 yrs 7 mos)</span>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">Information Security Consulting</span>
-                            <span class="skill-tag">ICT Security</span>
-                            <span class="skill-tag">Security Architecture</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">IT Assistant</h3>
-                            <span class="timeline-company">Action Africa Help International</span>
-                            <span class="timeline-type">Contract • On-site</span>
-                        </div>
-                        <span class="timeline-duration">Jan 2018 - Dec 2018 (1 yr)</span>
-                        <div class="timeline-skills">
-                            <span class="skill-tag">IT Support</span>
-                            <span class="skill-tag">System Administration</span>
-                            <span class="skill-tag">Technical Support</span>
-                        </div>
+                <div class="skills-visualization">
+                    <div class="skills-grid" id="skills-grid">
+                        <!-- Skills will be populated by JavaScript -->
                     </div>
                 </div>
             </div>
@@ -182,273 +240,208 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Project Portfolio</h2>
+            <div class="section-header">
+                <span class="section-subtitle">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="penetration-testing">Penetration Testing</button>
+                <button class="filter-btn" data-filter="cloud-security">Cloud Security</button>
+                <button class="filter-btn" data-filter="digital-forensics">Digital Forensics</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
+                <div class="project-card glass-card" data-category="penetration-testing">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="project-icon">🎯</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
                         <h3 class="project-title">Network Vulnerability Assessment Lab</h3>
-                    </div>
-                    <p class="project-description">Complete network penetration test on a multi-tier web application environment</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Nmap</span>
-                        <span class="tech-tag">Metasploit</span>
-                        <span class="tech-tag">Burp Suite</span>
-                        <span class="tech-tag">OWASP ZAP</span>
-                        <span class="tech-tag">Wireshark</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Identified critical vulnerabilities and provided comprehensive remediation strategies
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Web Application Security Assessment</h3>
-                    </div>
-                    <p class="project-description">Comprehensive security testing of e-commerce application for SQL injection and XSS vulnerabilities</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">OWASP ZAP</span>
-                        <span class="tech-tag">SQLmap</span>
-                        <span class="tech-tag">Burp Suite Professional</span>
-                        <span class="tech-tag">Custom Scripts</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Discovered 15+ security flaws and delivered detailed vulnerability report
+                        <p class="project-description">Complete network penetration test on a multi-tier web application environment with comprehensive vulnerability assessment and remediation recommendations.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Nmap</span>
+                            <span class="tech-tag">Metasploit</span>
+                            <span class="tech-tag">Burp Suite</span>
+                            <span class="tech-tag">OWASP ZAP</span>
+                            <span class="tech-tag">Wireshark</span>
+                        </div>
+                        <div class="project-outcome">
+                            <div class="outcome-stats">
+                                <div class="stat">25+ vulnerabilities identified</div>
+                                <div class="stat">95% risk reduction achieved</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Wireless Security Audit</h3>
+                <div class="project-card glass-card" data-category="cloud-security">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="project-icon">☁️</div>
+                        </div>
                     </div>
-                    <p class="project-description">Wi-Fi penetration testing and security assessment for enterprise network</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Aircrack-ng</span>
-                        <span class="tech-tag">Wireshark</span>
-                        <span class="tech-tag">Kismet</span>
-                        <span class="tech-tag">Custom Tools</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Enhanced wireless security posture and policy recommendations
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Digital Forensics Investigation Simulation</h3>
-                    </div>
-                    <p class="project-description">Complete digital forensics investigation of simulated data breach incident</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Autopsy</span>
-                        <span class="tech-tag">FTK Imager</span>
-                        <span class="tech-tag">Volatility Framework</span>
-                        <span class="tech-tag">Timeline Analysis</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Successfully reconstructed incident timeline and identified attack vectors
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Malware Analysis Laboratory</h3>
-                    </div>
-                    <p class="project-description">Static and dynamic analysis of malware samples for threat intelligence</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">IDA Pro</span>
-                        <span class="tech-tag">OllyDbg</span>
-                        <span class="tech-tag">Wireshark</span>
-                        <span class="tech-tag">Cuckoo Sandbox</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Developed IOC signatures and prevention strategies for emerging threats
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Mobile Device Forensics</h3>
-                    </div>
-                    <p class="project-description">Android/iOS forensic examination and data recovery for legal investigations</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Cellebrite UFED</span>
-                        <span class="tech-tag">Oxygen Forensic Suite</span>
-                        <span class="tech-tag">Custom Tools</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Recovered deleted evidence and provided expert witness testimony
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
+                    <div class="project-content">
                         <h3 class="project-title">Oracle OCI Security Assessment</h3>
-                    </div>
-                    <p class="project-description">Comprehensive security audit of Oracle Cloud Infrastructure deployment</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">OCI Security Scanner</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">Cloud Security Tools</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Implemented DevSecOps pipeline and enhanced cloud security posture
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">AWS Cloud Security Posture Management</h3>
-                    </div>
-                    <p class="project-description">Automated security monitoring and compliance checking for AWS infrastructure</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">AWS Security Hub</span>
-                        <span class="tech-tag">CloudTrail</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Lambda</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Reduced security incidents by 60% through automated monitoring
+                        <p class="project-description">Comprehensive security audit of Oracle Cloud Infrastructure deployment with DevSecOps pipeline implementation.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">OCI Security Scanner</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Cloud Security Tools</span>
+                            <span class="tech-tag">DevOps Pipeline</span>
+                        </div>
+                        <div class="project-outcome">
+                            <div class="outcome-stats">
+                                <div class="stat">80% security issues reduced</div>
+                                <div class="stat">Compliance posture improved</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Multi-Cloud Security Framework</h3>
+                <div class="project-card glass-card" data-category="digital-forensics">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <div class="project-icon">🔍</div>
+                        </div>
                     </div>
-                    <p class="project-description">Security architecture spanning AWS, OCI, and Azure environments</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Multi-cloud Tools</span>
-                        <span class="tech-tag">Identity Federation</span>
-                        <span class="tech-tag">SIEM</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Unified security monitoring across multiple cloud platforms
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">IoT Security Assessment</h3>
-                    </div>
-                    <p class="project-description">Security testing of smart home and industrial IoT devices</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Burp Suite</span>
-                        <span class="tech-tag">Wireshark</span>
-                        <span class="tech-tag">Custom Python Scripts</span>
-                        <span class="tech-tag">Hardware Tools</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Identified critical firmware vulnerabilities and network security gaps
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Threat Intelligence Platform</h3>
-                    </div>
-                    <p class="project-description">Automated threat data collection and analysis system for proactive defense</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">ELK Stack</span>
-                        <span class="tech-tag">MISP</span>
-                        <span class="tech-tag">Threat Feeds</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Enhanced threat detection capabilities and reduced response time by 40%
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 class="project-title">Cybersecurity Incident Response Playbook</h3>
-                    </div>
-                    <p class="project-description">Comprehensive incident response framework and automation system</p>
-                    <div class="project-technologies">
-                        <span class="tech-tag">SOAR Tools</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Documentation</span>
-                        <span class="tech-tag">Process Automation</span>
-                    </div>
-                    <div class="project-outcome">
-                        <strong>Outcome:</strong> Streamlined incident response process and improved MTTR by 50%
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Forensics Investigation Simulation</h3>
+                        <p class="project-description">Complete digital forensics investigation of simulated data breach incident with timeline reconstruction.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">Autopsy</span>
+                            <span class="tech-tag">FTK Imager</span>
+                            <span class="tech-tag">Volatility Framework</span>
+                            <span class="tech-tag">Timeline Analysis</span>
+                        </div>
+                        <div class="project-outcome">
+                            <div class="outcome-stats">
+                                <div class="stat">Timeline reconstructed</div>
+                                <div class="stat">Attack vectors identified</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section class="certifications" id="certifications">
+    <!-- Lab Challenges Section -->
+    <section class="lab-challenges" id="lab-challenges">
         <div class="container">
-            <h2 class="section-title">Certifications & Education</h2>
-            <div class="certifications-content">
-                <div class="certifications-grid">
-                    <div class="cert-card">
-                        <div class="cert-header">
-                            <h3 class="cert-name">Oracle Cloud Infrastructure 2025 Certified DevOps Professional</h3>
-                            <span class="cert-issuer">Oracle</span>
+            <div class="section-header">
+                <span class="section-subtitle">Hands-on experience</span>
+                <h2 class="section-title">Lab Challenges & CTF</h2>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card glass-card">
+                    <div class="challenge-header">
+                        <div class="challenge-platform">
+                            <span class="platform-name">TryHackMe</span>
+                            <span class="challenge-difficulty easy">Easy</span>
                         </div>
-                        <div class="cert-details">
-                            <span class="cert-date">Sep 2025</span>
-                            <span class="cert-expires">Expires: Sep 2027</span>
-                        </div>
-                        <span class="cert-id">OCI25DOPOCP</span>
+                        <div class="challenge-status completed">Completed</div>
                     </div>
-
-                    <div class="cert-card">
-                        <div class="cert-header">
-                            <h3 class="cert-name">Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
-                            <span class="cert-issuer">Oracle</span>
+                    <h3 class="challenge-title">Offensive Security Intro</h3>
+                    <p class="challenge-description">Hack your first website legally in a safe environment and experience an ethical hacker's job.</p>
+                    <div class="challenge-details">
+                        <div class="challenge-tools">
+                            <span class="tool-tag">Browser Dev Tools</span>
+                            <span class="tool-tag">Web Exploitation</span>
                         </div>
-                        <div class="cert-details">
-                            <span class="cert-date">Sep 2025</span>
-                            <span class="cert-expires">Expires: Sep 2027</span>
+                        <div class="challenge-expand" onclick="toggleChallenge(this)">
+                            <span>View Details</span>
+                            <div class="expand-icon">↓</div>
                         </div>
-                        <span class="cert-id">OCI25FNDCFA</span>
                     </div>
-
-                    <div class="cert-card">
-                        <div class="cert-header">
-                            <h3 class="cert-name">AWS Certified Cloud Practitioner</h3>
-                            <span class="cert-issuer">Amazon Web Services (AWS)</span>
+                    <div class="challenge-expanded">
+                        <div class="expanded-content">
+                            <h4>Approach:</h4>
+                            <p>Systematic web application testing using provided virtual environment with focus on identifying common vulnerabilities.</p>
+                            <h4>Key Lessons:</h4>
+                            <p>Introduction to ethical hacking methodology and legal framework for security testing.</p>
+                            <h4>Skills Gained:</h4>
+                            <div class="skills-gained">
+                                <span>Web Application Testing</span>
+                                <span>Ethical Hacking Fundamentals</span>
+                                <span>Legal Compliance</span>
+                            </div>
                         </div>
-                        <div class="cert-details">
-                            <span class="cert-date">Apr 2025</span>
-                            <span class="cert-expires">Expires: Apr 2028</span>
-                        </div>
-                        <span class="cert-id">aws-certified-cloud-practitioner</span>
-                    </div>
-
-                    <div class="cert-card">
-                        <div class="cert-header">
-                            <h3 class="cert-name">AWS re/Start Graduate</h3>
-                            <span class="cert-issuer">Amazon Web Services (AWS)</span>
-                        </div>
-                        <div class="cert-details">
-                            <span class="cert-date">Apr 2025</span>
-                        </div>
-                        <span class="cert-id">aws-re-start-graduate</span>
-                    </div>
-
-                    <div class="cert-card">
-                        <div class="cert-header">
-                            <h3 class="cert-name">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h3>
-                            <span class="cert-issuer">Oracle</span>
-                        </div>
-                        <div class="cert-details">
-                            <span class="cert-date">Sep 2024</span>
-                            <span class="cert-expires">Expires: Sep 2028</span>
-                        </div>
-                        <span class="cert-id">OCI25GAIOCP</span>
                     </div>
                 </div>
 
-                <div class="education-section">
-                    <h3 class="education-title">Education</h3>
-                    <div class="education-card">
-                        <h4 class="education-degree">Computer Security and Forensics</h4>
-                        <span class="education-institution">Jaramogi Oginga Odinga University of Science and Technology</span>
-                        <span class="education-field">Cyber/Computer Forensics • Distance Learning</span>
+                <div class="challenge-card glass-card">
+                    <div class="challenge-header">
+                        <div class="challenge-platform">
+                            <span class="platform-name">TryHackMe</span>
+                            <span class="challenge-difficulty medium">Medium</span>
+                        </div>
+                        <div class="challenge-status completed">Completed</div>
+                    </div>
+                    <h3 class="challenge-title">SQL Injection</h3>
+                    <p class="challenge-description">Learn to detect and exploit SQL Injection vulnerabilities in web applications.</p>
+                    <div class="challenge-details">
+                        <div class="challenge-tools">
+                            <span class="tool-tag">SQLmap</span>
+                            <span class="tool-tag">Burp Suite</span>
+                            <span class="tool-tag">Manual Testing</span>
+                        </div>
+                        <div class="challenge-expand" onclick="toggleChallenge(this)">
+                            <span>View Details</span>
+                            <div class="expand-icon">↓</div>
+                        </div>
+                    </div>
+                    <div class="challenge-expanded">
+                        <div class="expanded-content">
+                            <h4>Approach:</h4>
+                            <p>Practical exploitation of SQL injection flaws using various techniques including union-based, boolean-based, and time-based attacks.</p>
+                            <h4>Key Lessons:</h4>
+                            <p>Critical web application security flaw and importance of parameterized queries and input validation.</p>
+                            <h4>Skills Gained:</h4>
+                            <div class="skills-gained">
+                                <span>SQL Injection Testing</span>
+                                <span>Database Security</span>
+                                <span>Web Application Vulnerabilities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="challenge-card glass-card">
+                    <div class="challenge-header">
+                        <div class="challenge-platform">
+                            <span class="platform-name">TryHackMe</span>
+                            <span class="challenge-difficulty easy">Easy</span>
+                        </div>
+                        <div class="challenge-status completed">Completed</div>
+                    </div>
+                    <h3 class="challenge-title">Intro to Digital Forensics</h3>
+                    <p class="challenge-description">Learn digital forensics processes and experiment with practical forensic investigation scenarios.</p>
+                    <div class="challenge-details">
+                        <div class="challenge-tools">
+                            <span class="tool-tag">Autopsy</span>
+                            <span class="tool-tag">FTK Imager</span>
+                            <span class="tool-tag">Volatility</span>
+                        </div>
+                        <div class="challenge-expand" onclick="toggleChallenge(this)">
+                            <span>View Details</span>
+                            <div class="expand-icon">↓</div>
+                        </div>
+                    </div>
+                    <div class="challenge-expanded">
+                        <div class="expanded-content">
+                            <h4>Approach:</h4>
+                            <p>Hands-on forensic investigation using industry-standard methodologies for evidence collection and analysis.</p>
+                            <h4>Key Lessons:</h4>
+                            <p>Forensic investigation principles, evidence preservation techniques, and chain of custody procedures.</p>
+                            <h4>Skills Gained:</h4>
+                            <div class="skills-gained">
+                                <span>Digital Evidence Analysis</span>
+                                <span>Forensic Tools</span>
+                                <span>Investigation Methodology</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -458,39 +451,58 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Let's collaborate</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3 class="contact-title">Let's Connect</h3>
-                    <p class="contact-description">Ready to discuss your cybersecurity needs? Let's collaborate on securing your digital assets.</p>
+                    <div class="contact-intro">
+                        <h3>Ready to secure your digital assets?</h3>
+                        <p>Let's discuss your cybersecurity needs and how I can help protect your organization from cyber threats.</p>
+                    </div>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value">titus.kibet@example.com</span>
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-content-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">titus.kibet@example.com</span>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">Phone</span>
-                            <span class="contact-value">+254 XXX XXX XXX</span>
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-content-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+254 712 345 678</span>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">LinkedIn</span>
-                            <a href="https://www.linkedin.com/in/titus-kibet-2697902a6/" target="_blank" class="contact-value">titus-kibet-2697902a6</a>
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-content-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/titus-kibet-2697902a6/" target="_blank" class="contact-value">View Profile</a>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">Location</span>
-                            <span class="contact-value">Remote</span>
+                            <div class="contact-icon">🌍</div>
+                            <div class="contact-content-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Remote, Kenya</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
+                <div class="contact-form-container glass-card">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="subject" class="form-label">Subject</label>
@@ -500,7 +512,10 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-full-width">
+                            <span>Send Message</span>
+                            <i class="btn-icon">✈️</i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -511,11 +526,40 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Titus Kibet. All rights reserved.</p>
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <span class="footer-brand-text">Titus Kibet</span>
+                        <span class="footer-brand-subtitle">Cybersecurity Engineer</span>
+                    </div>
+                    <p class="footer-description">
+                        Protecting organizations from cyber threats through comprehensive security assessments and expert consultation.
+                    </p>
                 </div>
                 <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/titus-kibet-2697902a6/" target="_blank" class="footer-link">LinkedIn</a>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li>Penetration Testing</li>
+                            <li>Digital Forensics</li>
+                            <li>Cloud Security</li>
+                            <li>Security Consulting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Titus Kibet. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/titus-kibet-2697902a6/" target="_blank" class="social-link">LinkedIn</a>
                 </div>
             </div>
         </div>
